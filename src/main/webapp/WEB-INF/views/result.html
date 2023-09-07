@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Successfully</title>
+</head>
+<body>
+<center>
+    <h3 style="color: green"  th:text="${successful}"></h3>
+    <table >
+        <tr>
+            <td>First Name: </td>
+            <td th:text="${user.firstname}"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td th:text="${user.lastname}"></td>
+        </tr>
+        <tr>
+            <td>Tel: </td>
+            <td th:text="${user.phone}"></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td th:text="${user.email}"> </td>
+        </tr>
+        <tr>
+            <td>Age: </td>
+            <td th:text="${user.age}"></td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
